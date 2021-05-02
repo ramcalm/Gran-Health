@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1001,
+        "name":"Heart-Rate",
+        "imageName":"Heartrate2",
+        "description":"Get details related to the Heart-Rate of the individual including visualisations, average and abnormal values.",
+        "category":"heart and motion"
+    },
+    {
+        "id": 1002,
+        "name":"Steps",
+        "imageName":"Steps",
+        "description":"Get details related to the number of steps taken by the individual including visualisations and total value.",
+        "category":"heart and motion"
+    },
+    {
+        "id": 1003,
+        "name":"Walking / Running Distance",
+        "imageName":"Distance",
+        "description":"Get details related to the walking / running distance of the individual including visualisations and total value.",
+        "category":"heart and motion"
+    },
+    {
+        "id": 1004,
+        "name":"Flights Climbed",
+        "imageName":"Flights",
+        "description":"Get details related to the number of stairs climbed by the individual including visualisations and total value.",
+        "category":"heart and motion"
+    },
+    {
+        "id": 1005,
+        "name":"Step Length",
+        "imageName":"Steplength",
+        "description":"Get details related to the length of steps by the individual including visualisations and range.",
+        "category":"mobility"
+    },
+    {
+        "id": 1006,
+        "name":"Walking Speed",
+        "imageName":"Walkingspeed",
+        "description":"Get details related to the walking speed of the individual including visualisations and range.",
+        "category":"mobility"
+    },
+    {
+        "id": 1007,
+        "name":"Location",
+        "imageName":"Location",
+        "description":"Get details related to the location of the individual including map visualisations and tracking.",
+        "category":"tracking"
+    }
+]

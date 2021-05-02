@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B801AFCFC27BC787AC824D4B /* Pods_GranHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B740530A0C985A4D0F459D /* Pods_GranHealth.framework */; };
+		F082B5C725DCD61D007EC86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5C625DCD61D007EC86A /* AppDelegate.swift */; };
+		F082B5C925DCD61D007EC86A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5C825DCD61D007EC86A /* SceneDelegate.swift */; };
+		F082B5CB25DCD61D007EC86A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5CA25DCD61D007EC86A /* ContentView.swift */; };
+		F082B5CD25DCD61F007EC86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F082B5CC25DCD61F007EC86A /* Assets.xcassets */; };
+		F082B5D025DCD61F007EC86A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F082B5CF25DCD61F007EC86A /* Preview Assets.xcassets */; };
+		F082B5D325DCD61F007EC86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F082B5D125DCD61F007EC86A /* LaunchScreen.storyboard */; };
+		F082B5DB25DD611E007EC86A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F082B5DA25DD611D007EC86A /* GoogleService-Info.plist */; };
+		F082B5DD25DD9BF3007EC86A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5DC25DD9BF3007EC86A /* ErrorView.swift */; };
+		F082B5DF25DECA08007EC86A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5DE25DECA08007EC86A /* ProfileView.swift */; };
+		F082B5E125DEED2F007EC86A /* health.json in Resources */ = {isa = PBXBuildFile; fileRef = F082B5E025DEED2F007EC86A /* health.json */; };
+		F082B5E325DEEDC3007EC86A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5E225DEEDC3007EC86A /* Data.swift */; };
+		F082B5E525DEEFF4007EC86A /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5E425DEEFF4007EC86A /* Health.swift */; };
+		F082B5E725DEF1F0007EC86A /* HealthItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5E625DEF1F0007EC86A /* HealthItem.swift */; };
+		F082B5E925DEF5B5007EC86A /* HealthRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5E825DEF5B5007EC86A /* HealthRow.swift */; };
+		F082B5EB25DF0FAE007EC86A /* HealthDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5EA25DF0FAE007EC86A /* HealthDetail.swift */; };
+		F082B5ED25DFCE53007EC86A /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5EC25DFCE53007EC86A /* HeartRate.swift */; };
+		F082B5F025DFCF9F007EC86A /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5EF25DFCF9F007EC86A /* Steps.swift */; };
+		F082B5F225DFD0F1007EC86A /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5F125DFD0F1007EC86A /* Distance.swift */; };
+		F082B5F425DFD15B007EC86A /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5F325DFD15B007EC86A /* Flights.swift */; };
+		F082B5F625DFD1EE007EC86A /* StepLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5F525DFD1EE007EC86A /* StepLength.swift */; };
+		F082B5F825DFD244007EC86A /* WalkingSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5F725DFD244007EC86A /* WalkingSpeed.swift */; };
+		F082B5FA25DFD2AE007EC86A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5F925DFD2AE007EC86A /* Location.swift */; };
+		F082B5FC25DFE46F007EC86A /* HomescreenRecipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B5FB25DFE46F007EC86A /* HomescreenRecipient.swift */; };
+		F082B5FF25E10B0D007EC86A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F082B5FE25E10B0D007EC86A /* HealthKit.framework */; };
+		F082B60225E2316B007EC86A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F082B60125E2316B007EC86A /* SwiftUICharts */; };
+		F082B60425E29558007EC86A /* HRModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082B60325E29558007EC86A /* HRModal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B69B5F4A8B2448C3BF2CC40 /* Pods-GranHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GranHealth.release.xcconfig"; path = "Target Support Files/Pods-GranHealth/Pods-GranHealth.release.xcconfig"; sourceTree = "<group>"; };
+		53B740530A0C985A4D0F459D /* Pods_GranHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GranHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0207D83220E3ABAA5708548 /* Pods-GranHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GranHealth.debug.xcconfig"; path = "Target Support Files/Pods-GranHealth/Pods-GranHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		F082B5C325DCD61D007EC86A /* GranHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GranHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F082B5C625DCD61D007EC86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F082B5C825DCD61D007EC86A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F082B5CA25DCD61D007EC86A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F082B5CC25DCD61F007EC86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F082B5CF25DCD61F007EC86A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F082B5D225DCD61F007EC86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F082B5D425DCD61F007EC86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F082B5DA25DD611D007EC86A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F082B5DC25DD9BF3007EC86A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F082B5DE25DECA08007EC86A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F082B5E025DEED2F007EC86A /* health.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = health.json; sourceTree = "<group>"; };
+		F082B5E225DEEDC3007EC86A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F082B5E425DEEFF4007EC86A /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		F082B5E625DEF1F0007EC86A /* HealthItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthItem.swift; sourceTree = "<group>"; };
+		F082B5E825DEF5B5007EC86A /* HealthRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRow.swift; sourceTree = "<group>"; };
+		F082B5EA25DF0FAE007EC86A /* HealthDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetail.swift; sourceTree = "<group>"; };
+		F082B5EC25DFCE53007EC86A /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		F082B5EF25DFCF9F007EC86A /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		F082B5F125DFD0F1007EC86A /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		F082B5F325DFD15B007EC86A /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		F082B5F525DFD1EE007EC86A /* StepLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepLength.swift; sourceTree = "<group>"; };
+		F082B5F725DFD244007EC86A /* WalkingSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeed.swift; sourceTree = "<group>"; };
+		F082B5F925DFD2AE007EC86A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F082B5FB25DFE46F007EC86A /* HomescreenRecipient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenRecipient.swift; sourceTree = "<group>"; };
+		F082B5FD25E10B0D007EC86A /* GranHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GranHealth.entitlements; sourceTree = "<group>"; };
+		F082B5FE25E10B0D007EC86A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F082B60325E29558007EC86A /* HRModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRModal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F082B5C025DCD61D007EC86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F082B60225E2316B007EC86A /* SwiftUICharts in Frameworks */,
+				B801AFCFC27BC787AC824D4B /* Pods_GranHealth.framework in Frameworks */,
+				F082B5FF25E10B0D007EC86A /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6F76B32F083E81C31523D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F082B5FE25E10B0D007EC86A /* HealthKit.framework */,
+				53B740530A0C985A4D0F459D /* Pods_GranHealth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8695B17789BF86FF111069D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0207D83220E3ABAA5708548 /* Pods-GranHealth.debug.xcconfig */,
+				4B69B5F4A8B2448C3BF2CC40 /* Pods-GranHealth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F082B5BA25DCD61D007EC86A = {
+			isa = PBXGroup;
+			children = (
+				F082B5C525DCD61D007EC86A /* GranHealth */,
+				F082B5C425DCD61D007EC86A /* Products */,
+				8695B17789BF86FF111069D3 /* Pods */,
+				0A6F76B32F083E81C31523D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F082B5C425DCD61D007EC86A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F082B5C325DCD61D007EC86A /* GranHealth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F082B5C525DCD61D007EC86A /* GranHealth */ = {
+			isa = PBXGroup;
+			children = (
+				F082B5FD25E10B0D007EC86A /* GranHealth.entitlements */,
+				F082B5C625DCD61D007EC86A /* AppDelegate.swift */,
+				F082B5C825DCD61D007EC86A /* SceneDelegate.swift */,
+				F082B5CA25DCD61D007EC86A /* ContentView.swift */,
+				F082B5FB25DFE46F007EC86A /* HomescreenRecipient.swift */,
+				F082B5EE25DFCE77007EC86A /* MainTemplates */,
+				F082B5E825DEF5B5007EC86A /* HealthRow.swift */,
+				F082B5EA25DF0FAE007EC86A /* HealthDetail.swift */,
+				F082B5E625DEF1F0007EC86A /* HealthItem.swift */,
+				F082B5DE25DECA08007EC86A /* ProfileView.swift */,
+				F082B5DC25DD9BF3007EC86A /* ErrorView.swift */,
+				F082B5CC25DCD61F007EC86A /* Assets.xcassets */,
+				F082B5E025DEED2F007EC86A /* health.json */,
+				F082B5E225DEEDC3007EC86A /* Data.swift */,
+				F082B5E425DEEFF4007EC86A /* Health.swift */,
+				F082B5D125DCD61F007EC86A /* LaunchScreen.storyboard */,
+				F082B5D425DCD61F007EC86A /* Info.plist */,
+				F082B5DA25DD611D007EC86A /* GoogleService-Info.plist */,
+				F082B5CE25DCD61F007EC86A /* Preview Content */,
+			);
+			path = GranHealth;
+			sourceTree = "<group>";
+		};
+		F082B5CE25DCD61F007EC86A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F082B5CF25DCD61F007EC86A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F082B5EE25DFCE77007EC86A /* MainTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				F082B5EC25DFCE53007EC86A /* HeartRate.swift */,
+				F082B5EF25DFCF9F007EC86A /* Steps.swift */,
+				F082B5F125DFD0F1007EC86A /* Distance.swift */,
+				F082B5F325DFD15B007EC86A /* Flights.swift */,
+				F082B5F525DFD1EE007EC86A /* StepLength.swift */,
+				F082B5F725DFD244007EC86A /* WalkingSpeed.swift */,
+				F082B5F925DFD2AE007EC86A /* Location.swift */,
+				F082B60325E29558007EC86A /* HRModal.swift */,
+			);
+			path = MainTemplates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F082B5C225DCD61D007EC86A /* GranHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F082B5D725DCD61F007EC86A /* Build configuration list for PBXNativeTarget "GranHealth" */;
+			buildPhases = (
+				D62F81249888C4B953457678 /* [CP] Check Pods Manifest.lock */,
+				F082B5BF25DCD61D007EC86A /* Sources */,
+				F082B5C025DCD61D007EC86A /* Frameworks */,
+				F082B5C125DCD61D007EC86A /* Resources */,
+				5474C658C012D30CE58FAAD7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GranHealth;
+			packageProductDependencies = (
+				F082B60125E2316B007EC86A /* SwiftUICharts */,
+			);
+			productName = GranHealth;
+			productReference = F082B5C325DCD61D007EC86A /* GranHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F082B5BB25DCD61D007EC86A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.siddharthnair;
+				TargetAttributes = {
+					F082B5C225DCD61D007EC86A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F082B5BE25DCD61D007EC86A /* Build configuration list for PBXProject "GranHealth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F082B5BA25DCD61D007EC86A;
+			packageReferences = (
+				F082B60025E2316B007EC86A /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = F082B5C425DCD61D007EC86A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F082B5C225DCD61D007EC86A /* GranHealth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F082B5C125DCD61D007EC86A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F082B5D325DCD61F007EC86A /* LaunchScreen.storyboard in Resources */,
+				F082B5DB25DD611E007EC86A /* GoogleService-Info.plist in Resources */,
+				F082B5E125DEED2F007EC86A /* health.json in Resources */,
+				F082B5D025DCD61F007EC86A /* Preview Assets.xcassets in Resources */,
+				F082B5CD25DCD61F007EC86A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5474C658C012D30CE58FAAD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GranHealth/Pods-GranHealth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GranHealth/Pods-GranHealth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GranHealth/Pods-GranHealth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62F81249888C4B953457678 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GranHealth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F082B5BF25DCD61D007EC86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F082B5FC25DFE46F007EC86A /* HomescreenRecipient.swift in Sources */,
+				F082B5E925DEF5B5007EC86A /* HealthRow.swift in Sources */,
+				F082B5E725DEF1F0007EC86A /* HealthItem.swift in Sources */,
+				F082B5EB25DF0FAE007EC86A /* HealthDetail.swift in Sources */,
+				F082B5C725DCD61D007EC86A /* AppDelegate.swift in Sources */,
+				F082B5F225DFD0F1007EC86A /* Distance.swift in Sources */,
+				F082B5FA25DFD2AE007EC86A /* Location.swift in Sources */,
+				F082B5E325DEEDC3007EC86A /* Data.swift in Sources */,
+				F082B5C925DCD61D007EC86A /* SceneDelegate.swift in Sources */,
+				F082B5ED25DFCE53007EC86A /* HeartRate.swift in Sources */,
+				F082B5DF25DECA08007EC86A /* ProfileView.swift in Sources */,
+				F082B5E525DEEFF4007EC86A /* Health.swift in Sources */,
+				F082B5F625DFD1EE007EC86A /* StepLength.swift in Sources */,
+				F082B5F825DFD244007EC86A /* WalkingSpeed.swift in Sources */,
+				F082B60425E29558007EC86A /* HRModal.swift in Sources */,
+				F082B5F025DFCF9F007EC86A /* Steps.swift in Sources */,
+				F082B5CB25DCD61D007EC86A /* ContentView.swift in Sources */,
+				F082B5DD25DD9BF3007EC86A /* ErrorView.swift in Sources */,
+				F082B5F425DFD15B007EC86A /* Flights.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F082B5D125DCD61F007EC86A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F082B5D225DCD61F007EC86A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F082B5D525DCD61F007EC86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F082B5D625DCD61F007EC86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F082B5D825DCD61F007EC86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0207D83220E3ABAA5708548 /* Pods-GranHealth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GranHealth/GranHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GranHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RKRAF5YY8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GranHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sid.GranHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F082B5D925DCD61F007EC86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B69B5F4A8B2448C3BF2CC40 /* Pods-GranHealth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GranHealth/GranHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GranHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RKRAF5YY8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GranHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sid.GranHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F082B5BE25DCD61D007EC86A /* Build configuration list for PBXProject "GranHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F082B5D525DCD61F007EC86A /* Debug */,
+				F082B5D625DCD61F007EC86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F082B5D725DCD61F007EC86A /* Build configuration list for PBXNativeTarget "GranHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F082B5D825DCD61F007EC86A /* Debug */,
+				F082B5D925DCD61F007EC86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F082B60025E2316B007EC86A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F082B60125E2316B007EC86A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F082B60025E2316B007EC86A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F082B5BB25DCD61D007EC86A /* Project object */;
+}
